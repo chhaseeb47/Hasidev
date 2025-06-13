@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHIZXY BOT MD | WhatsApp Bot</title>
+    <title>HASI AI | WhatsApp Bot</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -464,19 +464,19 @@
             
             <div class="step-card">
                 <div class="step-number">5</div>
-                <h3>Start Using SHIZXY BOT</h3>
+                <h3>Start Using HASI AI</h3>
                 <p>Once connected, you can start using the bot by sending commands like !help to get started.</p>
             </div>
         </div>
 
         <div class="social-icons">
-            <a href="https://github.com/mrlit-a" target="_blank" class="social-icon"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://chat.whatsapp.com/Jx7300IL1iVIaDUolVULBj" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-            <a href="https://www.instagram.com/shizxy_andy/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://github.com/chhaseeb47" target="_blank" class="social-icon"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://chat.whatsapp.com/" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://www.t.me/MHMODSOFC/" target="_blank" class="social-icon"><i class="fab fa-telegram"></i> telegram</a>
         </div>
 
         <footer>
-            © 2025 MRLIT ANDY | Designed with ❤️ | All Rights Reserved
+            © 2025 CH HASEEB | Designed with ❤️ | All Rights Reserved
         </footer>
     </div>
 
