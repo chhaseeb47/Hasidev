@@ -207,7 +207,7 @@ async function createBot(sessionId) {
       };
       const message = {
         image: image,
-        caption: separatorLine + "\n" + "*`◦ Successfully Connected To ANDY BOT Type .menu To see menu list 😚 `*\n*`◦ Developer:`* 13056978303\n*`◦ Version:`* 1.0" + "\n\n*`◦ Total Plugins:`* " + totalPlugins + "\n\n*`◦ User Settings:`*\n" + userSettingsText + "\n" + separatorLine
+        caption: separatorLine + "\n" + "*`◦ Successfully Connected To HASI AI  Type .menu To see menu list 😚 `*\n*`◦ Developer:`* 13056978303\n*`◦ Version:`* 1.0" + "\n\n*`◦ Total Plugins:`* " + totalPlugins + "\n\n*`◦ User Settings:`*\n" + userSettingsText + "\n" + separatorLine
       };
       await client.sendMessage(client.user.id, message);
     }
@@ -291,14 +291,14 @@ client.ev.on("messages.upsert", async (eventData) => {
       const quotedMessage = m.message.extendedTextMessage?.contextInfo?.quotedMessage;
       if (quotedMessage) {
         if (quotedMessage.imageMessage) {
-          const imageCaption = quotedMessage.imageMessage.caption || "> © Created By Mrlit Andy.";
+          const imageCaption = quotedMessage.imageMessage.caption || "> © Created By X HASI";
           const imageUrl = await downloadAndSaveMediaMessage(quotedMessage.imageMessage, "image");
           const imageObject = { url: imageUrl };
           const imageMessage = { image: imageObject, caption: imageCaption };
           await client.sendMessage(m.chat, imageMessage, { quoted: m });
         }
         if (quotedMessage.videoMessage) {
-          const videoCaption = quotedMessage.videoMessage.caption || "> © Created By Andy Lit.";
+          const videoCaption = quotedMessage.videoMessage.caption || "> © Created By X HASI";
           const videoUrl = await downloadAndSaveMediaMessage(quotedMessage.videoMessage, "video");
           const videoObject = { url: videoUrl };
           const videoMessage = { video: videoObject, caption: videoCaption };
@@ -330,7 +330,7 @@ client.ev.on("messages.upsert", async (eventData) => {
             views: songViews,
           } = await ytmp4(url);
 
-          const videoInfo = `╭───────────\n│◦ *Ethix-MD-V3 Song Downloader*\n` +
+          const videoInfo = `╭───────────\n│◦ *HASI AI Song Downloader*\n` +
             `│◦ *Title:* ${songTitle}\n` +
             `│◦ *Author:* ${songAuthor}\n` +
             `│◦ *Duration:* ${songDuration}\n` +
@@ -351,7 +351,7 @@ client.ev.on("messages.upsert", async (eventData) => {
             views: songViews,
           } = await ytmp3(url);
 
-          const audioInfo = `╭───────────\n│◦ *Ethix-MD-V3 Song Downloader*\n` +
+          const audioInfo = `╭───────────\n│◦ *HASI AI Song Downloader*\n` +
             `│◦ *Title:* ${songTitle}\n` +
             `│◦ *Author:* ${songAuthor}\n` +
             `│◦ *Duration:* ${songDuration}\n` +
@@ -634,7 +634,7 @@ async function createRestoredBot(sessionName) {
 
     if (trimmedMessage === '1') {
       const { video, title, author, duration, views } = await ytmp4(url);
-      const videoDetails = `╭───────────\n│◦ *Ethix-MD-V3 Song Download*\n│◦ *Title:* ${title}\n│◦ *Author:* ${author}\n│◦ *Duration:* ${duration}\n│◦ *Views:* ${views}\n╰───────────`;
+      const videoDetails = `╭───────────\n│◦ *HASI AI Song Download*\n│◦ *Title:* ${title}\n│◦ *Author:* ${author}\n│◦ *Duration:* ${duration}\n│◦ *Views:* ${views}\n╰───────────`;
       
       const videoMessage = { url: video };
       const videoOptions = { video: videoMessage, caption: videoDetails };
@@ -642,7 +642,7 @@ async function createRestoredBot(sessionName) {
 
     } else if (trimmedMessage === '2') {
       const { audio, title, author, duration, views } = await ytmp3(url);
-      const audioDetails = `╭───────────\n│◦ *Ethix-MD-V3 Song Download*\n│◦ *Title:* ${title}\n│◦ *Author:* ${author}\n│◦ *Duration:* ${duration}\n│◦ *Views:* ${views}\n╰───────────`;
+      const audioDetails = `╭───────────\n│◦ *HASI AI Song Download*\n│◦ *Title:* ${title}\n│◦ *Author:* ${author}\n│◦ *Duration:* ${duration}\n│◦ *Views:* ${views}\n╰───────────`;
 
       const audioMessage = { url: audio };
       const audioOptions = { audio: audioMessage, mimetype: "audio/mpeg", caption: audioDetails };
