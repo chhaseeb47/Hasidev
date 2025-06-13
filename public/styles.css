@@ -1,0 +1,59 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #1a202c;
+    color: #e2e8f0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-image: url('https://wallpapers.com/images/featured-small/one-piece-phone-beu8vxkxxywm5vsf.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(26, 32, 44, 0.85);
+    z-index: -1;
+}
+
+.light-mode {
+    background-color: #f7fafc;
+    color: #2d3748;
+}
+
+.link-card {
+    transition: all 0.3s ease;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(66, 153, 225, 0.5);
+}
+
+#dark-mode-toggle {
+    transition: all 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+    transform: rotate(45deg);
+}
+
+.light-mode #dark-mode-toggle svg {
+    fill: #2d3748;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
